@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+
+.navbar {
+  background-color: rgba(0,0,0,0);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  height: 100px;
+}
+
+
+.container {
+  background-color: rgba(0,0,0,0);
+  height: 80px;
+}
+
+
+.navbar-brand {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.navbar-toggler.collapsed {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.navbar-toggler-icon {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.navbar-collapse {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.navbar-collapse.collapse {
+  background-color: rgba(0,0,0,0);
+  height: 100%;
+}
+
+
+.navbar-collapse.collapse.show {
+  background-color: rgba(0,0,0,0);
+}
+
+
+.nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+.nav-link.navbar-link:hover {
+  opacity: 1;
+}
+
+.nav-link.navbar-link.active {
+  opacity: 1;
+}
+
+
+.navbar-text {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0,0,0,0);
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  background-color: rgba(0,0,0,0);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+
+
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+
+
+.social-icon a img {
+	width: 40%;
+	z-index: 1;
+	transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+
+.navbar-text button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  background-color: rgba(0,0,0,0);
   color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.navbar-text button {
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10%;
+  background-color: rgba(0,0,0,0);
+  color: white;
+  padding: 10px;
+  margin-left: 18px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-text button span {
+  z-index: 1;
 }
+
+.navbar-text button::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover {
+  color: #121212;
+}
+.navbar-text button:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+
+
