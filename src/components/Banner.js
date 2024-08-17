@@ -50,17 +50,17 @@ function Banner() {
         <section className="banner" id="home">
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col sm={12} xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
                         <h1>
                             {'Hi, I\'m Saba\n'}
                             <br />
                             <span className="wrap">{text}</span>
                         </h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga ad iusto cupiditate impedit eos porro officiis a dicta optio? Nulla, iusto delectus sunt et nesciunt quo ut harum optio!</p>
-                        <button onClick={() => console.log('connect btn clicked')}>Let's connect</button>
+                        <p>Studied Computer Engineering at Amirkabir Univesity of Technology, hard-working, goal-oriented team player, self-learner and interested in Machine Learning and Application Development.</p>
+                        <a onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></a>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
+                    <Col sm={12} xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
                     </Col>
                 </Row>

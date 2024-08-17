@@ -208,3 +208,75 @@ body {
 
 
 
+.banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 700px;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  border: 1px solid lightgray;
+  padding: 8px 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  display: inline-block;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+}
+
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700px;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 30px;
+  display: block;
+}
+
+
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5;
+}
+
+.banner a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner a svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner a:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
